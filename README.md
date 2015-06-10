@@ -4,26 +4,26 @@ Conversion script from BWAPI 3 to 4 for .cpp, .hpp and .h source files. Place sc
 
 ###TODO###
 
-**BWAPI 4.1.1 Beta**
+**Changes in BWAPI 4.1.1 Beta**
 
 - nothing
 
 
-**BWAPI 4.1.0 Beta**
+**Changes in BWAPI 4.1.0 Beta**
 
 - The video commands have been removed
 
 
-**BWAPI 4.0.1 Beta (r4453)**
+**Changes in BWAPI 4.0.1 Beta (r4453)**
 
-- <s>All interface pointers are now hidden. Instead of Unit* you will now just use Unit. This will require a "Replace in Files" operation to convert existing sources</s>
+- ~~All interface pointers are now hidden. Instead of Unit* you will now just use Unit. This will require a "Replace in Files" operation to convert existing sources~~
 - Game::setTextSize now takes a BWAPI::Text::Size::Enum parameter instead of an integer
 - All instances of IsUnpowered were renamed to IsPowered
 
 
-**BWAPI 4.0.0 Beta (r4350)**
+**Changes in BWAPI 4.0.0 Beta (r4350)**
 
-- <s>x, y members now public; x(), y() functions removed</s>
+- ~~x, y members now public; x(), y() functions removed~~
 
 
 - Each interface class will have its own derived set with several enhancements, and brings in some functionality similar to that of BWSAL. The new sets are as follows: Unitset, Playerset, Regionset, Bulletset, Forceset
@@ -33,8 +33,8 @@ Conversion script from BWAPI 3 to 4 for .cpp, .hpp and .h source files. Place sc
 
 - Types have also received their own set, the Type::set (Example: UnitType::set)
 - All types' enumerations are now available (for switch case usage) and are accessed by Types::Enum (Example: UnitTypes::Enum::Terran_Marine)
-- <s>TechType::energyUsed renamed to energyCost</s>
-- <s>UnitTypes::getUnit, Races::getRace, etc. have now been replaced with static Type::getType. (Example: Races::getRace doesn't exist, use Race::getType)</s>
+- ~~TechType::energyUsed renamed to energyCost~~
+- ~~UnitTypes::getUnit, Races::getRace, etc. have now been replaced with static Type::getType. (Example: Races::getRace doesn't exist, use Race::getType)~~
 
 
 - The parameters for canBuildHere, canMake, canResearch, and canUpgrade have been rearranged
@@ -45,10 +45,10 @@ Conversion script from BWAPI 3 to 4 for .cpp, .hpp and .h source files. Place sc
 - Some functions now take an Enum type instead of an int
 
 
-- <s>groundWeaponMaxRange and airWeaponMaxRange have been removed. Use weaponMaxRange instead</s>
+- ~~groundWeaponMaxRange and airWeaponMaxRange have been removed. Use weaponMaxRange instead~~
 - getTextColor now returns a char instead of an int so that it is printed correctly when used with ostream::operator <<
 - Unit count functions now take a default parameter of AllUnits
-- <s>Rename groundWeaponDamageCooldown to weaponDamageCooldown</s>
+- ~~Rename groundWeaponDamageCooldown to weaponDamageCooldown~~
 
 
 - The parameters for build have been rearranged
@@ -58,4 +58,8 @@ Conversion script from BWAPI 3 to 4 for .cpp, .hpp and .h source files. Place sc
 - getResources now returns the last-known resource amount when the unit becomes inaccessible
 
 
-- <s>Renamed isWalkable to isAccessible</s>
+- ~~Renamed isWalkable to isAccessible~~
+
+
+**List of all changes**
+- [http://bwapi.github.io/changes_top.html](http://bwapi.github.io/changes_top.html)
