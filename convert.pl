@@ -37,9 +37,9 @@ find(sub {
     $data =~ s/UpgradeType::getUpgradeType/UpgradeType::getType/g;
     $data =~ s/WeaponType::getWeaponType/WeaponType::getType/g;
     
-    if ($data =~ m/getUpgradeLevel/g) { 
-      print "Found '$&'.  Next attempt at character " . pos($data)+1 . "\n"; 
-    }
+    #if ($data =~ m/getUpgradeLevel/g) { 
+    #  print "Found '$&'.  Next attempt at character " . pos($data)+1 . "\n"; 
+    #}
 
     write_file($filename, $data);
   }
