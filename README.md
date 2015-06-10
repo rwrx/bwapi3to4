@@ -1,5 +1,5 @@
 # bwapi3to4
-Conversion script from BWAPI 3 to 4 for .cpp, .hpp and .h source files. Place script to folder where your sources are located and run it from command line.
+Perl conversion script from BWAPI 3 to 4 for .cpp, .hpp and .h source files. Place script to folder where your sources are located and run it from command line.
 
 
 ###TODO###
